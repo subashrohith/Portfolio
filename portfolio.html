@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0B1120">
+    <title>Subash M – React JS Developer</title>
+    <meta name="description"
+        content="React JS developer building ERP, billing and live-tracking interfaces. 5 years in web design, 2 in React. 50+ projects shipped.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { ink: '#E6EBF5', blue: '#22C8E8', onblue: '#04212B', cyan2: '#06B6D4', violet: '#A78BFA', mist: '#0B1120', surface: '#121A2E', line: '#243049', slate2: '#9AA6BD', foot: '#070B14', teal2: '#2DD4BF', pink2: '#F472B6' },
+                    fontFamily: {
+                        display: ['Roboto Condensed', 'system-ui', 'sans-serif'],
+                        sans: ['Roboto Condensed', 'system-ui', 'sans-serif'],
+                        mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .row {
+            white-space: pre;
+            opacity: 0;
+            transform: translateY(6px);
+            animation: print .5s ease forwards;
+        }
+
+        @keyframes print {
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .row {
+                animation: none;
+                opacity: 1;
+                transform: none;
+            }
+
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #22C8E8;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="bg-mist text-ink font-sans antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-20 bg-surface/90 backdrop-blur border-b border-line">
+        <nav class="mx-auto max-w-6xl px-5 h-14 flex items-center justify-between" aria-label="Main">
+            <a href="#top"><img src="./subash.png" class="w-32" alt="Subash M"></a>
+            <ul class="hidden sm:flex gap-7 text-sm font-medium text-slate2">
+                <li><a class="hover:text-blue" href="#experience">Experience</a></li>
+                <li><a class="hover:text-blue" href="#work">Work</a></li>
+                <li><a class="hover:text-blue" href="#skills">Skills</a></li>
+                <li><a class="hover:text-blue" href="#contact">Contact</a></li>
+            </ul>
+            <a href="mailto:subashrohith45@gmail.com"
+                class="text-sm font-semibold bg-blue text-onblue px-4 py-2 rounded-full hover:bg-ink transition-colors">Contact
+                Me</a>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- Hero -->
+        <section class="dots">
+            <div class="mx-auto max-w-6xl px-5 pt-14 pb-20 grid lg:grid-cols-[1.15fr_.85fr] gap-12 items-center">
+                <div>
+                    <p class="text-slate2 font-medium mb-4">React JS Developer · Tamil Nadu, India</p>
+                    <h1 class="font-display font-bold text-4xl sm:text-6xl leading-[1.04] tracking-tight">I turn complex
+                        business workflows into <span
+                            class="bg-gradient-to-r from-violet to-cyan2 bg-clip-text text-transparent">clean React
+                            interfaces.</span></h1>
+                    <p class="mt-6 text-lg text-slate2 max-w-xl leading-relaxed">4+ years of web design and front-end
+                        work, the last two in React, from client websites to a full ERP for textile retail and chit
+                        funds. I turn business rules into fast, clear interfaces that staff use all day.</p>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a href="#work"
+                            class="bg-blue text-onblue font-semibold px-6 py-3 rounded-full hover:bg-ink transition-colors">See
+                            my work</a>
+                        <a href="https://linkedin.com/in/subash-m-3475a1218" target="_blank" rel="noopener"
+                            class="border border-ink/30 font-semibold px-6 py-3 rounded-full hover:border-blue hover:text-blue transition-colors">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Code card -->
+                <aside
+                    class="bg-surface border border-line rounded-xl shadow-[0_20px_50px_-20px_rgba(6,182,212,.35)] w-full max-w-md lg:justify-self-end font-mono text-sm overflow-hidden"
+                    aria-label="Profile summary shown as code">
+                    <div class="flex items-center gap-2 px-4 py-3 border-b border-line bg-white/5">
+                        <span class="h-3 w-3 rounded-full bg-[#FF8FA3]"></span><span
+                            class="h-3 w-3 rounded-full bg-[#FFD27A]"></span><span
+                            class="h-3 w-3 rounded-full bg-[#7EDDB5]"></span>
+                        <span class="ml-3 text-slate2 text-xs">subash.js</span>
+                    </div>
+                    <div class="p-5 leading-6 overflow-x-auto text-ink">
+                        <div class="row" style="animation-delay:.1s"><span class="text-blue">const</span> subash = {
+                        </div>
+                        <div class="row" style="animation-delay:.4s"> <span class="text-teal2">role</span>: <span
+                                class="text-pink2">"React JS Developer"</span>,</div>
+                        <div class="row" style="animation-delay:.7s"> <span class="text-teal2">experience</span>: <span
+                                class="text-pink2">"4+ years"</span>,</div>
+                        <div class="row" style="animation-delay:1s"> <span class="text-teal2">react</span>: <span
+                                class="text-pink2">"2 years"</span>,</div>
+                        <div class="row" style="animation-delay:1.3s"> <span class="text-teal2">shipped</span>: <span
+                                class="text-pink2">"30+ sites and apps"</span>,</div>
+                        <div class="row" style="animation-delay:1.6s"> <span class="text-teal2">stack</span>: [<span
+                                class="text-pink2">"React"</span>, <span class="text-pink2">"Redux"</span>, <span
+                                class="text-pink2">"Bootstrap"</span>],</div>
+                        <div class="row" style="animation-delay:1.9s"> <span class="text-teal2">building</span>: <span
+                                class="text-pink2">"ERP and Client Websites"</span>,</div>
+                        <div class="row" style="animation-delay:2.2s"> <span class="text-teal2">nextProject</span>:
+                            <span class="text-pink2">"yours"</span></div>
+                        <div class="row" style="animation-delay:2.5s">};</div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="bg-surface border-y border-line">
+            <div class="mx-auto max-w-6xl px-5 py-20 grid lg:grid-cols-[.8fr_1.2fr] gap-10">
+                <div class="lg:sticky lg:top-24 self-start">
+                    <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight">Where I've worked</h2>
+                    <p class="mt-3 text-slate2 max-w-xs">From small business sites to a production ERP, with the same
+                        focus on clean, reusable components.</p>
+                </div>
+                <ol id="timeline" class="relative border-l-2 border-line space-y-10 pl-7">
+                    <li class="relative reveal">
+                        <span
+                            class="dot absolute -left-[37px] top-1.5 h-4 w-4 rounded-full bg-blue ring-4 ring-surface"></span>
+                        <h3 class="font-display font-bold text-xl">React JS Developer, Zenfuture</h3>
+                        <p class="text-sm text-slate2 mb-3">Dec 2025 – Present · Product-based company</p>
+                        <ul class="space-y-2 text-slate2 leading-relaxed list-disc pl-5 marker:text-blue">
+                            <li>Built purchase entry, package dispatch, damaged stock, attendance, payroll and bank
+                                reporting modules.</li>
+                            <li>Structured every module with Redux Toolkit slices, async thunks and optimistic updates.
+                            </li>
+                            <li>Integrated Spring Boot APIs with paginated reports and multipart KYC and dispatch
+                                uploads.</li>
+                            <li>Designed invoice and receipt templates, and a shared CSS design system with theme
+                                variables.</li>
+                        </ul>
+                    </li>
+                    <li class="relative reveal">
+                        <span
+                            class="dot absolute -left-[37px] top-1.5 h-4 w-4 rounded-full bg-slate2 ring-4 ring-surface"></span>
+                        <h3 class="font-display font-bold text-xl">Sr. Front-End Developer, Webbitech Maestro</h3>
+                        <p class="text-sm text-slate2 mb-3">Mar 2023 – May 2025 · Coimbatore · Service-based company</p>
+                        <ul class="space-y-2 text-slate2 leading-relaxed list-disc pl-5 marker:text-blue">
+                            <li>Built my first React project here. Turned high-fidelity designs into responsive React
+                                interfaces that match brand guidelines.</li>
+                            <li>Cut load times and improved SEO scores. Migrated several legacy websites to React.</li>
+                        </ul>
+                    </li>
+                    <li class="relative reveal">
+                        <span
+                            class="dot absolute -left-[37px] top-1.5 h-4 w-4 rounded-full bg-slate2 ring-4 ring-surface"></span>
+                        <h3 class="font-display font-bold text-xl">Front-End Developer, Fern Crystal Info Media</h3>
+                        <p class="text-sm text-slate2 mb-3">Feb 2022 – Nov 2022 · Erode · Product-based company</p>
+                        <p class="text-slate2 leading-relaxed">Built mobile-first sites with Bootstrap and JavaScript,
+                            tested across major browsers.</p>
+                    </li>
+                    <li class="relative reveal">
+                        <span
+                            class="dot absolute -left-[37px] top-1.5 h-4 w-4 rounded-full bg-slate2 ring-4 ring-surface"></span>
+                        <h3 class="font-display font-bold text-xl">Junior Front-End Developer, Hashref Technologies</h3>
+                        <p class="text-sm text-slate2 mb-3">Feb 2021 – Jan 2022 · Dharmapuri · Service-based company</p>
+                        <p class="text-slate2 leading-relaxed">Created reusable UI components and led front-end work on
+                            small to mid-sized projects.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+
+        <!-- Work -->
+        <section id="work" class="mx-auto max-w-6xl px-5 py-20">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <p class="text-sm font-medium tracking-wide text-cyan2 uppercase">My portfolio</p>
+                <h2 class="mt-3 text-3xl sm:text-5xl font-bold tracking-tight">Ideas I Turned <span
+                        class="bg-gradient-to-r from-violet to-cyan2 bg-clip-text text-transparent">Into Reality.</span>
+                </h2>
+                <p class="mt-4 text-slate2">Products and websites I've designed and built for businesses across retail,
+                    finance and services.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article
+                    class="bg-surface border border-line rounded-xl overflow-hidden hover:-translate-y-1 transition-transform">
+                    <div class="h-44 bg-gradient-to-br from-violet/30 to-cyan2/40 flex items-center justify-center"
+                        aria-hidden="true">
+                        <div class="w-3/5 bg-mist rounded-lg shadow-lg p-3 space-y-2">
+                            <div class="h-2 w-1/3 rounded bg-ink/70"></div>
+                            <div class="h-2 rounded bg-line"></div>
+                            <div class="h-2 w-4/5 rounded bg-line"></div>
+                            <div class="h-6 w-1/2 rounded bg-blue/80"></div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg">Textile retail and chit fund ERP</h3>
+                        <p class="text-sm text-blue font-medium">Zenfuture · Product company</p>
+                        <p class="mt-2 text-sm text-slate2 leading-relaxed">Billing, purchase, dispatch, stock,
+                            attendance, payroll and reports with role-based menus and branch controls.</p>
+                    </div>
+                </article>
+                <article
+                    class="bg-surface border border-line rounded-xl overflow-hidden hover:-translate-y-1 transition-transform">
+                    <div class="h-44 bg-gradient-to-br from-violet/30 to-pink2/20 flex items-center justify-center"
+                        aria-hidden="true">
+                        <div class="w-3/5 bg-mist rounded-lg shadow-lg p-3 space-y-2">
+                            <div class="h-2 w-1/3 rounded bg-ink/70"></div>
+                            <div class="h-2 rounded bg-line"></div>
+                            <div class="h-2 w-4/5 rounded bg-line"></div>
+                            <div class="h-6 w-1/2 rounded bg-blue/80"></div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg">Service marketplace</h3>
+                        <p class="text-sm text-blue font-medium">Hashref · Service company</p>
+                        <p class="mt-2 text-sm text-slate2 leading-relaxed">Profiles, listings, booking flows,
+                            subscriptions and notifications.</p>
+                    </div>
+                </article>
+                <article
+                    class="bg-surface border border-line rounded-xl overflow-hidden hover:-translate-y-1 transition-transform">
+                    <div class="h-44 bg-gradient-to-br from-cyan2/30 to-violet/30 flex items-center justify-center"
+                        aria-hidden="true">
+                        <div class="w-3/5 bg-mist rounded-lg shadow-lg p-3 space-y-2">
+                            <div class="h-2 w-1/3 rounded bg-ink/70"></div>
+                            <div class="h-2 rounded bg-line"></div>
+                            <div class="h-2 w-4/5 rounded bg-line"></div>
+                            <div class="h-6 w-1/2 rounded bg-blue/80"></div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg">Daily news upload site</h3>
+                        <p class="text-sm text-blue font-medium">Fern Crystal · Product company</p>
+                        <p class="mt-2 text-sm text-slate2 leading-relaxed">Responsive news upload and publishing site I
+                            built for the company's own product, with fast load times and SEO.</p>
+                    </div>
+                </article>
+                <article
+                    class="bg-surface border border-line rounded-xl overflow-hidden hover:-translate-y-1 transition-transform">
+                    <div class="h-44 bg-gradient-to-br from-blue/30 to-violet/30 flex items-center justify-center"
+                        aria-hidden="true">
+                        <div class="w-3/5 bg-mist rounded-lg shadow-lg p-3 space-y-2">
+                            <div class="h-2 w-1/3 rounded bg-ink/70"></div>
+                            <div class="h-2 rounded bg-line"></div>
+                            <div class="h-2 w-4/5 rounded bg-line"></div>
+                            <div class="h-6 w-1/2 rounded bg-blue/80"></div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg">Company website</h3>
+                        <p class="text-sm text-blue font-medium">Webbitech · Service company</p>
+                        <p class="mt-2 text-sm text-slate2 leading-relaxed">My first React project: a modular,
+                            component-based site with animated sections and dynamic services.</p>
+                    </div>
+                </article>
+                <article
+                    class="bg-surface border border-line rounded-xl overflow-hidden hover:-translate-y-1 transition-transform">
+                    <div class="h-44 bg-gradient-to-br from-cyan2/30 to-teal2/20 flex items-center justify-center"
+                        aria-hidden="true">
+                        <div class="w-3/5 bg-mist rounded-lg shadow-lg p-3 space-y-2">
+                            <div class="h-2 w-1/3 rounded bg-ink/70"></div>
+                            <div class="h-2 rounded bg-line"></div>
+                            <div class="h-2 w-4/5 rounded bg-line"></div>
+                            <div class="h-6 w-1/2 rounded bg-blue/80"></div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg">Client websites</h3>
+                        <p class="text-sm text-blue font-medium">50+ delivered</p>
+                        <p class="mt-2 text-sm text-slate2 leading-relaxed">Responsive sites and apps shipped across
+                            industries, including migrations of legacy sites to React.</p>
+                    </div>
+                </article>
+            </div>
+            <p class="mt-10 text-center text-slate2 max-w-3xl mx-auto leading-relaxed text-sm">Also delivered: Quick
+                Service Logistics, Structura Fab, Sritex, Vistaes, RK Kitchens, Angass Charcoal, Entool, Ultrabar, Sagar
+                Terracotta and TSPL T10 Cricket League.</p>
+        </section>
+
+        <!-- Skills + Education -->
+        <section id="skills" class="bg-surface border-y border-line">
+            <div class="mx-auto max-w-6xl px-5 py-20 grid md:grid-cols-2 gap-14">
+                <div>
+                    <h2 class="font-display font-bold text-3xl tracking-tight mb-8">Skills</h2>
+                    <dl class="space-y-6">
+                        <div>
+                            <dt class="font-semibold mb-2">Core</dt>
+                            <dd class="flex flex-wrap gap-2 text-sm"><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">HTML5</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">CSS3</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">JavaScript ES6+</span>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold mb-2">Libraries</dt>
+                            <dd class="flex flex-wrap gap-2 text-sm"><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">React.js</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Redux Toolkit</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Tailwind CSS</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Bootstrap</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">SASS</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">jQuery</span></dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold mb-2">APIs</dt>
+                            <dd class="flex flex-wrap gap-2 text-sm"><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">REST (Spring
+                                    Boot)</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Axios</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Fetch</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">File uploads</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Google Maps</span></dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold mb-2">Tools</dt>
+                            <dd class="flex flex-wrap gap-2 text-sm"><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Git &amp;
+                                    GitHub</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Postman</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Chrome
+                                    DevTools</span><span
+                                    class="bg-white/5 border border-line px-3 py-1 rounded-md">Figma (basic)</span></dd>
+                        </div>
+                    </dl>
+                </div>
+                <div>
+                    <h2 class="font-display font-bold text-3xl tracking-tight mb-8">Education</h2>
+                    <p class="font-display font-bold text-xl">Bachelor of Engineering, Computer Science</p>
+                    <p class="text-slate2 mt-1">Varuvan Vadivelan Institute of Technology, Dharmapuri</p>
+                    <p class="text-slate2 text-sm mt-1">2017 – 2021</p>
+                    <h3 class="font-display font-bold text-xl mt-12 mb-3">How I work</h3>
+                    <p class="text-slate2 leading-relaxed">Component-first, reusable design systems, and clear ownership
+                        of what I ship. Recognized for speed, UI precision and maintainable code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact"
+            class="bg-gradient-to-br from-violet/25 to-cyan2/20 border-y border-line text-ink text-center">
+            <div class="mx-auto max-w-3xl px-5 py-20">
+                <h2 class="text-3xl sm:text-5xl font-bold leading-tight tracking-tight">Ready to build something great?
+                    Let's talk.</h2>
+                <p class="mt-5 text-lg text-white/90">Tell me what your business needs and I'll help turn it into a
+                    fast, clear interface.</p>
+                <div class="mt-8 flex flex-wrap justify-center gap-3">
+                    <a href="mailto:subashrohith45@gmail.com"
+                        class="bg-blue text-onblue font-semibold px-6 py-3 rounded-full hover:bg-ink">Email me</a>
+                    <a href="https://linkedin.com/in/subash-m-3475a1218" target="_blank" rel="noopener"
+                        class="border border-ink/40 font-semibold px-6 py-3 rounded-full hover:bg-white/10">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-foot text-white/80 text-sm">
+        <div class="mx-auto max-w-6xl px-5 py-8 flex flex-wrap items-center justify-between gap-4">
+            <p>© <span id="yr">2026</span> Subash M. All rights reserved.</p>
+            <p><a class="hover:text-white" href="mailto:subashrohith45@gmail.com">subashrohith45@gmail.com</a> · <a
+                    class="hover:text-white" href="tel:+918124546966">+91 81245 46966</a></p>
+        </div>
+    </footer>
+    <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
